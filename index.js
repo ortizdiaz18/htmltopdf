@@ -50,7 +50,7 @@ const htmlContent = `<!DOCTYPE html>
     <style>
         body {
             width: 1190px;
-            height: 1530px;
+            height: 5530px;
             display: flex;
             /* padding-top: 30px; */
         }
@@ -68,9 +68,11 @@ const htmlContent = `<!DOCTYPE html>
         .section2 {
             position: absolute;
             width: 1190px;
-            height: 1530px;
+            height: 1230px;
             top: 1528px;
             display: flex;
+            margin: 8px;
+            margin-bottom: 20px;
         }
 
         .section2 img {
@@ -86,10 +88,11 @@ const htmlContent = `<!DOCTYPE html>
         .section3 {
             position: absolute;
             width: 1190px;
-            height: 1510px;
-            top: 3056px;
+            height: 1210px;
+            top: 3356px;
             display: block;
             color: gray;
+            margin: 8px;
         }
 
         .section3 h1 {
@@ -133,12 +136,12 @@ const htmlContent = `<!DOCTYPE html>
 
         .columA {
             width: 595px;
-            height: 1535px;
+           
         }
 
         .columB {
             width: 595px;
-            height: 1535px;
+            
         }
 
         .columB img {
@@ -392,7 +395,7 @@ const htmlContent = `<!DOCTYPE html>
         .parrafos {
             text-align: justify;
             margin: 0px 40px 0px 20px;
-            font-size: 18px;
+            font-size: 17px;
         }
 
         #firma {
@@ -874,7 +877,7 @@ const htmlContent = `<!DOCTYPE html>
             <table style="width: 540px; margin-left: 20px; height: 90px; border-color: gray;">
                 <tr>
                     <div
-                        style="position: absolute; margin-left: 80px;top: 1320px; display: flex; width: 595px; height: 100px;">
+                        style="position: absolute; margin-left: 80px;top: 900px; display: flex; width: 595px; height: 100px;">
                         <div style="width: auto; padding-top: 8px;">
                             <h4 class="firma">Firma electronica ${id_transaccion}</h4>
                             <h4 class="firma">Firmante: ${nombreCompleto}</h4>
@@ -1042,7 +1045,7 @@ app.get("/convert", async (req, res) => {
     top: "5mm",
     bottom: "5mm",
     left: "5mm",
-    right: "10mm",
+    right: "5mm",
   };
 
   if (!browser) {

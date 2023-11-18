@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contrato</title>
+    <style>
+        body {
+            width: 1190px;
+            height: 1350px;
+            display: flex;
+            padding-top: 30px;
+        }
+
+        .titulos {
+            width: 531px;
+            height: 30px;
+        }
+
+        .fondo-titulo {
+            width: 531px;
+            height: 30px;
+        }
+
+        .section2 {
+            position: absolute;
+            width: 1190px;
+            height: 1530px;
+            top: 1600px;
+            display: flex;
+            padding-top: 20px;
+        }
+
+        .section2 img {
+            margin-left: 40px !important;
+            width: 535px;
+        }
+
+        .section2 .columA .parrafos {
+            margin-left: 40px !important;
+            margin-right: 20px !important;
+        }
+
+        .section3 {
+            position: absolute;
+            width: 1190px;
+            height: 1530px;
+            top: 3200px;
+            display: block;
+            color: gray;
+        }
+
+        .section3 h1 {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 20px;
+            margin: 0px;
+            color: rgb(104, 104, 104);
+        }
+
+        .section3 h2 {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 20px;
+            text-align: center;
+            font-weight: normal;
+            margin-top: 0px;
+        }
+
+        .section3 p {
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: justify;
+            margin: 10px 30px;
+            font-size: 20px;
+        }
+
+        .section3 span {
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: justify;
+            margin: 30px;
+            color: rgb(104, 104, 104);
+        }
+
+        .section4 {
+            position: absolute;
+            width: 1190px;
+            height: 1350px;
+            display: block;
+            color: gray;
+            margin: 40px;
+        }
+
+        .columA {
+            width: 595px;
+            height: 1535px;
+        }
+
+        .columB {
+            width: 595px;
+            height: 1535px;
+        }
+
+        .columB img {
+            margin-left: 20px !important;
+        }
+
+        h1 {
+            display: flex;
+            font-family: arial;
+            font-size: 15px;
+            justify-content: center;
+            align-items: center;
+            margin: 0px 30px;
+            height: 15px;
+        }
+
+        p {
+            font-family: arial;
+        }
+
+        table {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 18px;
+            table-layout: fixed;
+            border: 1px solid black;
+            border-collapse: collapse;
+            font-weight: normal;
+        }
+
+        td {
+            font-family: Arial, Helvetica, sans-serif;
+            border: 1px solid black;
+            border-collapse: collapse !important;
+            font-weight: normal;
+            height: 15px;
+            width: 250px !important;
+        }
+
+        tr {
+            border: 1px solid black;
+            border-collapse: collapse !important;
+        }
+
+        .marcar {
+            width: 10px;
+            height: 10px;
+            border: 1px solid black;
+            padding-left: 5px;
+        }
+
+        #logo {
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            margin: 10px 20px 0px 40px;
+            flex-direction: row;
+            flex-wrap: wrap;
+            align-content: flex-end;
+        }
+
+        #logo_titulo {
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            margin: 10px 10px 5px 0px;
+            flex-direction: row;
+            flex-wrap: wrap;
+            width: 340px;
+        }
+
+        #info-bitwan {
+            display: flex;
+            flex-direction: column;
+            font-weight: bold
+        }
+
+        #info-bitwan p {
+            margin: 0px;
+            font-size: 15px;
+            margin-right: 10px;
+        }
+
+        #explicacion {
+            margin: 30px;
+            text-align: justify;
+            font-size: 20px;
+            margin: 25px 20px 0px 40px;
+        }
+
+        #servicio p {
+            text-align: justify;
+            margin: 5px 20px 5px 40px;
+            font-size: 18px
+        }
+
+        #servicio img {
+            margin-left: 40px;
+            height: 20px;
+        }
+
+        #servicio h1 {
+            height: 20px;
+        }
+
+        #inf-suscriptor img {
+            height: 20px;
+        }
+
+        #inf-suscriptor h1 {
+            height: 20px;
+        }
+
+        #inf-suscriptor span {
+            font-size: 19px !important;
+        }
+
+        #condiciones img {
+            height: 20px;
+        }
+
+        #condiciones h1 {
+            height: 20px;
+        }
+
+        #obligaciones_a {
+            margin-left: 20px;
+            margin-top: 75px;
+        }
+
+        #obligaciones_a img {
+            height: 20px;
+            margin-left: 19px !important;
+            width: 535px
+        }
+
+        #obligaciones_a h1 {
+            height: 20px;
+            margin: 0px
+        }
+
+        #obligaciones img {
+            height: 20px;
+        }
+
+        #obligaciones h1 {
+            height: 20px;
+        }
+
+        #calidad img {
+            height: 20px;
+        }
+
+        #calidad h1 {
+            height: 20px;
+        }
+
+        #cesion img {
+            height: 20px;
+        }
+
+        #cesion h1 {
+            height: 20px;
+        }
+
+        #modificacion img {
+            height: 20px;
+        }
+
+        #modificacion h1 {
+            height: 20px;
+        }
+
+        #suspencion img {
+            height: 20px;
+        }
+
+        #suspencion h1 {
+            height: 20px;
+        }
+
+        #terminacion img {
+            height: 20px;
+        }
+
+        #terminacion h1 {
+            height: 20px;
+        }
+
+        #pago-facturacion img {
+            height: 20px;
+        }
+
+        #pago-facturacion h1 {
+            height: 20px;
+        }
+
+        .section2 img {
+            height: 20px;
+        }
+
+        .section2 h1 {
+            height: 20px;
+        }
+
+        .cobro-reconexion img {
+            height: 73px;
+        }
+
+        .intFijo {
+            position: relative;
+            font-family: Arial;
+            left: 220px;
+            margin: 5px !important;
+        }
+
+        #inf-suscriptor {
+            margin: 10px 20px 0px 40px !important;
+            height: 250px;
+        }
+
+        #inf-suscriptor h1 {
+            margin-bottom: 10px !important;
+        }
+
+        #inf-suscriptor span {
+            display: flex;
+            font-weight: normal;
+            font-size: 15px;
+            left: 170px !important;
+        }
+
+        #inf-suscriptor p {
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bold;
+            font-size: 15px;
+            height: 10px;
+            margin-top: 25px;
+        }
+
+        #condiciones {
+            position: relative;
+            top: 30px;
+            margin: 10px 20px 30px 40px;
+        }
+
+        #condiciones h1 {
+            margin-top: 5px !important;
+            margin-bottom: 10px !important;
+        }
+
+        .parrafos {
+            text-align: justify;
+            margin: 0px 40px 0px 20px;
+            font-size: 18px;
+        }
+
+        #firma {
+            margin-top: 10px;
+        }
+
+        #logo-acta {
+            display: flex;
+            justify-content: space-around;
+            margin: 10px;
+            align-items: center;
+            width: 560px
+        }
+
+        .firma {
+            font-family: monospace;
+            font-weight: normal;
+            color: gray;
+            line-height: 1px;
+            font-size: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <section class="section4">
+        <div style="width:1160px">
+            <table style="width:1130px; border-collapse: collapse;">
+                <tr>
+                    <td rowspan="3" style="width: 600px;">
+                        <div id="logo-acta"> <img style="position: relative;"
+                                src="https://storage.googleapis.com/m-infra.appspot.com/public/res/Insitel/20220621-h1VDyOmxgRQk46YiUZIYzpUZz552-VXYAR-.png"
+                                alt="logo.png">
+                            <div style="position: relative; color:black" id="info-bitwan">
+                                <p> INSITEL S.A.S</p>
+                                <p>NIT.900313208</p>
+                                <p>Calle 5 # 8 - 25</p>
+                                <p>Alcala, Valle del Cauca</p>
+                            </div> <img style="position: relative;" id="qr"
+                                src="https://storage.googleapis.com/m-infra.appspot.com/public/res/Insitel/20220808-h1VDyOmxgRQk46YiUZIYzpUZz552-INOZX-.png"
+                                alt="QRbitwan.png">
+                        </div>
+                    </td>
+                    <td colspan="3" style="text-align:center; color:black; font-weight:bold;  font-size: 20px;;">ACTA DE
+                        INSTALACIÓN Y ACTIVACIÓN</td>
+                </tr>
+                <tr style="font-size:12px; color:black; height: 20px; text-align:center; ">
+                    <td style="height: 20px; font-weight:bolder"> F-OPE-006</td>
+                    <td style="height: 20px; font-weight:bolder"> Versión: 4 </td>
+                    <td style="height: 20px; font-weight:bolder;"> Fecha de aprobación: 04/08/2022</td>
+                </tr>
+            </table>
+            <table style="width:1130px; border-collapse: collapse; margin-top: 30px; color: black">
+                <tr>
+                    <td style="font-weight: bold; text-align:center">Fecha instalación</td>
+                    <td style="text-align:center"></td>
+                    <td style="font-weight: bold; text-align:center">Servicio N°</td>
+                    <td style=" text-align:center">${numServicio}</td>
+                </tr>
+            </table>
+            <table style="width:1130px; border-collapse: collapse; margin-top: 30px; color: black">
+                <tr>
+                    <td colspan="3" style="font-weight: bold;">Usuario: <span
+                            style="font-weight: normal ;">${nombreCompleto}</span></td>
+                </tr>
+            </table>
+            <table style="border-top:1px solid transparent; width:1130px; color: black;">
+                <tr style="border-top:1px solid transparent">
+                    <td style=" width: 600px !important; border-top:1px solid transparent">Telefonos: <span
+                            style="margin-left: 40px !important ;">${telefono}</span> <span
+                            style="margin-left: 40px !important;"> ${telContacto}</span></td>
+                    <td style="border-top:1px solid transparent; width:100px !important">Cedula:</td>
+                    <td style="border-top:1px solid transparent">${cedula}</td>
+                </tr>
+                <tr>
+                    <td>Dirección: ${direccion}</td>
+                    <td>Ciudad:</td>
+                    <td>${municipio}</td>
+                </tr>
+                <tr>
+                    <td>Departamento: ${departamento}</td>
+                    <td>Barrio:</td>
+                    <td>${barrio}</td>
+                </tr>
+            </table>
+            <table
+                style="width:1130px; border-collapse: collapse; margin-top: 30px; color: black; font-family: Arial, Helvetica, sans-serif;">
+                <tr>
+                    <td colspan="4" style="text-align:center; font-weight:bold;">EQUIPOS ENTREGADOS AL USUARIO</td>
+                </tr>
+                <tr style="text-align: center; height:50px">
+                    <td></td>
+                    <td style="font-weight: bold;">EQUIPO 1</td>
+                    <td style="font-weight: bold;">EQUIPO 2</td>
+                    <td style="font-weight: bold;">EQUIPO 3</td>
+                </tr>
+                <tr style=" height:30px">
+                    <td>TIPO EQUIPO</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr style=" height:30px">
+                    <td>MARCA</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr style=" height:30px">
+                    <td>ID EQUIPO</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr style=" height:30px">
+                    <td>UBICACIÓN</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+            </table>
+            <div>
+                <p style="color: black; font-weight: bold; margin-top: 30px; margin-bottom: 30px;"> OBSERVACIONES <span
+                        style="font-weight:normal">
+                        <p style="color: black;">
+                            _______________________________________________________________________________________________________________________________
+                        </p>
+                        <p style="color: black;">
+                            _______________________________________________________________________________________________________________________________
+                        </p>
+                        <p style="color: black;">
+                            _______________________________________________________________________________________________________________________________
+                        </p>
+                        <p style="color: black;">
+                            _______________________________________________________________________________________________________________________________
+                        </p>
+                        <p style="color: black;">
+                            _______________________________________________________________________________________________________________________________
+                        </p>
+                    </span> </p>
+            </div>
+            <table style="width: 1129px; margin-top:50px">
+                <tr>
+                    <td style="text-align: center; color:black; padding:20px; border-bottom: 1px solid transparent;">
+                        NOTA: La facturación del servicio será iniciada por INSITEL S.A.S a partir del día siguiente a
+                        la fecha de la presente acta. Este documento hace parte integral del Contrato para la Prestación
+                        de Servicios de Telecomunicaciones suscrito entre las partes. <p> El usuario recibe los equipos
+                            en comodato y/o en asignación modal y sera responsable por los mismos; los equipos no podrán
+                            ser alterados, reubicados o trasladados del lugar de instalación , esto es causal de
+                            terminación del contrato. </p>
+                    </td>
+                </tr>
+            </table>
+            <table style=" width: 1129px ">
+                <tr>
+                    <td style="width: 600px !important; ">
+                        <div style="margin-left: 20px; color: black;">
+                            <p>Como USUARIO recibí a satisfacción:</p>
+                            <p>Firma: ____________________________________________________________</p>
+                            <p>Nombre: __________________________________________________________</p>
+                            <p>Cedula o NIT: _______________________ Telefono: _______________________</p>
+                            <p>Ciudad y Fecha: ____________________________________________________</p>
+                        </div>
+                    </td>
+                    <td>
+                        <div style="display: flex; flex-direction: column; align-items: center; color: black;">
+                            <h1 style="margin-bottom: 60px;">Representante de bitwan</h1>
+                            <p style="margin:0px">_________________________</p>
+                            <h1 style="height: 10px ; margin-bottom: 30px;">Firma</h1>
+                            <p style="margin:0px">_________________________</p>
+                            <h1 style="height: 10px ;">Nombre</h1>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </section>
+
+</html>
